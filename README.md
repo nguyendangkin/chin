@@ -1,9 +1,9 @@
-# pip - Công Cụ Lưu Trữ & Mã Hóa Tốc Độ Cao (v6)
+# pip - Công Cụ Lưu Trữ & Mã Hóa Tốc Độ Cao
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20|%20Linux%20|%20macOS-lightgrey)
 
-**pip** (Performant Independent Packer) là công cụ dòng lệnh (CLI) chuyên dụng để đóng gói và bảo mật dữ liệu. Phiên bản v6 tập trung vào **an toàn bảo mật tuyệt đối** và **tốc độ xử lý tối đa**.
+**pip** (Performant Independent Packer) là công cụ dòng lệnh (CLI) chuyên dụng để đóng gói và bảo mật dữ liệu, tập trung vào **an toàn bảo mật tuyệt đối** và **tốc độ xử lý tối đa**.
 
 ---
 
@@ -108,7 +108,7 @@ pip list <archive.pip> [flags]
 ```
 
 **Tùy chọn:**
-*   `-p, --password`: Cần thiết nếu file metadata bị mã hóa (Version 6 mặc định mã hóa tất cả).
+*   `-p, --password`: Cần thiết nếu file metadata bị mã hóa.
 
 **Kết quả hiển thị:**
 *   **MODE**: Loại (FILE hoặc DIR).
@@ -119,7 +119,7 @@ pip list <archive.pip> [flags]
 
 ## Chi Tiết Kỹ Thuật & Bảo Mật
 
-### 1. Định dạng File (File Format v6)
+### 1. Định dạng File
 *   **Mã hóa**: AES-256-GCM (Authenticated Encryption).
 *   **Key Derivation (KDF)**:
     *   Sử dụng **PBKDF2-SHA256** để tạo Master Key từ mật khẩu người dùng.
